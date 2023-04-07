@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="{% static '/css/temp.css' %} " >
+</head>
+<body>
+    <div class="container">
+        <div class="container-box">
+            <div class="container-box-1 container-box-b">
+                <div class="container-box-1-1 container-box-1-b hover">
+                    <a href="#"><div>h.</div></a>
+                </div>
+                <a href="/" class="container-box-1-2 hover">Home</a>
+                <a href="/intro" class="container-box-1-2 hover">Intro</a>
+                <a href="#" class="container-box-1-2 hover">Projects</a>
+                <a href="#" class="container-box-1-2 hover">Skills</a>
+                <a href="#" class="container-box-1-2 hover">Ambition</a>
+                <a href="#" class="container-box-1-2 hover">Final</a>
+            </div>
+            <div class="container-box-2 container-box-b">
+                <div class="container-box-2-name">Harshit Kumar</div>
+                <div class="container-box-2-title">
+                    COMPUTER PROGRAMMER
+                </div>
+                <div class="container-box-2-profile"></div>
+                <div class="container-box-2-embed">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

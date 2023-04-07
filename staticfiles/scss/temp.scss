@@ -1,0 +1,112 @@
+@import 'variable';
+
+body 
+{
+    background-color: #a48472;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    &-box
+    {
+        background-color: #fbf8f58d;
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.33);
+        position: relative;
+        padding: 20px 50px;
+
+        &-1
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            flex-grow: 1;
+            border-radius: 20px 0px 0px 20px;
+            font-size: 12px;
+
+            &-1
+            {
+                font-size: 45px;
+                color: white;
+                position: relative;
+                padding: 20px;
+
+                div
+                {
+                    background-color: black;
+                    color: white;
+                    border-radius: 50%;
+                    position: inherit;
+                    height: 80px;
+                    width: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $fontbold;
+                }
+            }
+
+            &-2
+            {
+                margin: 10px;
+                font-family: $fonta;
+            }
+        }
+
+        &-2
+        {
+            flex-grow: 7;
+            padding: 20px 40px;
+            font-family: $fonta;
+
+            &-name
+            {
+                font-size: 22px;
+                font-weight: bold;
+                margin: 15px 0px 5px 0px;
+            }
+
+            &-title
+            {
+                font-size: 10px;
+                margin: 0px 2px;
+                font-weight: bold;
+            }
+            &-profile
+            {
+                margin: 20px 0px;
+                width: 450px;
+                height: 250px;
+                background-color: blue;
+                background-image: url('../images/cat.jpeg');
+                // background-position: -10px -30px;
+                background-position: center;
+                background-size: 110% ;
+            }
+            &-embed
+            {
+                height: 220px;
+                width: 450px;
+            }
+        }
+    }
+}
+
+.hover:hover
+{   
+    cursor: pointer;
+}
+
+a 
+{
+    text-decoration: none;
+    color: black;
+}
